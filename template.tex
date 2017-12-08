@@ -1,0 +1,41 @@
+\documentclass[]{bxjsarticle}
+\usepackage{listings}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{xltxtra}
+\usepackage{zxjatype}
+\setmonofont{Courier}
+\setjamainfont{Hiragino Kaku Gothic Pro}
+\XeTeXlinebreaklocale "ja"
+
+\lstset{
+  basicstyle=\ttfamily,
+  frame=single,
+}
+
+$header-includes$
+
+\title{$title$}
+\author{$for(author)$$author$$sep$\and $endfor$}
+\date{$date$}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\addtocounter{page}{-1}
+
+$if(toc)$
+\tableofcontents
+$else$
+$endif$
+
+$include-before$
+
+$body$
+
+$include-after$
+
+\end{document}

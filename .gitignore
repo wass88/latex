@@ -1,0 +1,6 @@
+*.aux
+*.tex
+*.pdf
+*.toc
+*.log
+!template.tex
